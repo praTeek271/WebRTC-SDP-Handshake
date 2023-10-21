@@ -59,7 +59,7 @@ document.getElementById('create-answer').addEventListener('click', createAnswer)
 document.getElementById('add-answer').addEventListener('click', addAnswer);
 
 
-// Function to apply the selected color scheme
+x // Function to apply the selected color scheme
 function applyColorScheme(scheme) {
     document.body.className = scheme;
   }
