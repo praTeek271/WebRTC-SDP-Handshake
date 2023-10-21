@@ -1,0 +1,172 @@
+:root {
+  --primary-color: #FF5733;
+  --background-color: #333;
+  --header-bg-color: #222;
+  --container-bg-color: #444;
+  --text-color: #fff;
+  --button-bg-color: var(--primary-color);
+  --scrollbar-thumb: var(--primary-color);
+  --scrollbar-track: #555;
+}
+
+/* Custom scrollbar for Webkit-based browsers */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  position: relative; /* Required for the color tray */
+}
+
+header {
+  background-color: var(--header-bg-color);
+  text-align: center;
+  padding: 20px 0;
+}
+
+#color-tray {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--container-bg-color);
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  z-index: 1;
+}
+
+button {
+  background-color: var(--button-bg-color);
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+/* Define color-changing classes */
+.blue-color-scheme {
+  --primary-color: #3498db;
+  --button-bg-color: var(--primary-color);
+}
+
+.green-color-scheme {
+  --primary-color: #27ae60;
+  --button-bg-color: var(--primary-color);
+}
+
+red-color-scheme {
+  --primary-color: #e74c3c;
+  --button-bg-color: var(--primary-color);
+}
+
+#container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--container-bg-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#instructions {
+  text-align: left;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+p {
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+#videos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.video-player {
+  width: 100%;
+  border: 2px solid var(--primary-color);
+  background-color: var(--background-color);
+}
+
+.step {
+  padding: 20px;
+  background-color: var(--container-bg-color);
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  background-color: var(--button-bg-color);
+  color: var(--text-color);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+  color: var(--text-color);
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  resize: none;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+textarea{
+  background-color: var(--container-bg-color); /* Add this line to set the background color to black */
+  color: white;
+}
