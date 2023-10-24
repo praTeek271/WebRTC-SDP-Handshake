@@ -1,4 +1,4 @@
-# WebRTC SDP Demo
+# WebRTC-SDP-Handshake
 
 This project is a WebRTC SDP (Session Description Protocol) demo that allows two users to exchange SDP offer and answer. It demonstrates the process of creating and exchanging SDP offers and answers without the need for a signaling server.
 
@@ -28,13 +28,13 @@ To get a local copy of the project up and running, follow these steps:
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/prateek271/WebRTC-SDP-Demo.git
+   git clone https://github.com/prateek271/WebRTC-SDP-Handshake.git
    ```
 
 2. Change your working directory to the project folder:
 
    ```sh
-   cd WebRTC-SDP-Demo
+   cd WebRTC-SDP-Handshake
    ```
 
 3. Open the `index.html` file in a web browser to start the demo.
